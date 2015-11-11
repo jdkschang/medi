@@ -1,10 +1,10 @@
-var React = require('react');
+var React       = require('react'),
+    ReactDOM    = require('react-dom');
 
 var Hello = React.createClass({
-    displayName: 'Hello',
     render: function () {
-        return "<div>Hello, {this.props.name}</div>"
+        return <div>Hello, {this.props.name}</div>;
     }
 })
 
-React.render("<Hello name='World!'/>", document.body)
+ReactDOM.render(<Hello name='World!'/>, document.body)
